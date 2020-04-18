@@ -3,10 +3,10 @@ package com.cursospring.main;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class App {
-    public static final CharSequence MENSAJE = ",has entrado al curso de Spring Framework";
+    public static final CharSequence MENSAJE = "Has entrado al curso de Spring Framework";
 
     private ISaludo saludo;
     
@@ -24,6 +24,15 @@ public class App {
 
         //Usando archivo de contexto XML
         contexto();
+
+        //Usando @Configuration
+        configuracion();
+    }
+
+    public static void configuracion(){
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        HelloWorld obj = (HelloWorld) context.getBean("helloBean");
+        obj.printHelloWorld("hemos logrado la configuracion");
     }
 
     public static void contexto(){
