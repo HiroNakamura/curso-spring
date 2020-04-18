@@ -17,3 +17,4 @@
 Links:
 * [Sitio oficial Spring Framework](https://spring.io/)
 * [http://www.java2s.com](http://www.java2s.com/Tutorials/Java/Spring/)
+* [Apps Developer Blog](http://www.appsdeveloperblog.com/run-spring-boot-app-from-a-command-line/)
