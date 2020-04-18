@@ -8,7 +8,6 @@
   <name>Introduccion</name>
   <url>http://maven.apache.org</url>
 
-  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -24,4 +23,27 @@
   </dependency>   
   
   </dependencies>
+
+<build>
+		<plugins>
+<plugin> 
+    <groupId>org.codehaus.mojo</groupId> 
+    <artifactId>exec-maven-plugin</artifactId> 
+    <version>1.6.0</version> 
+    <executions> 
+     <execution> 
+      <goals> 
+       <goal>java</goal> 
+      </goals> 
+     </execution> 
+    </executions> 
+    <configuration> 
+     <mainClass>com.cursospring.main.App</mainClass> 
+    </configuration> 
+</plugin> 
+</plugins>
+</build>
+
+
+
 </project>
