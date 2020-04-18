@@ -5,6 +5,14 @@
 ## ¿Qué es Spring Framework?
 *Spring* es un framework para el desarrollo de aplicaciones y contenedor de inversión de control, de código abierto para la plataforma Java.
 
+## ¿Qué puedes hacer con Spring Framework?
+
+* Microservicios.
+* Aplicaciones reactivas.
+* Aplicaciones en la nube.
+* Aplicaciones Web.
+* Aplicaciones Batch.
+
 
 Links:
 * [Sitio oficial Spring Framework](https://spring.io/)
