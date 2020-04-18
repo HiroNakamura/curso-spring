@@ -1,6 +1,10 @@
 package com.cursospring.main;
 
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+
 public class App {
     public static final CharSequence MENSAJE = ",has entrado al curso de Spring Framework";
 
@@ -17,5 +21,14 @@ public class App {
     public static void main( String[] args ){
         ISaludo saludoImpl = new SaludoImpl();
         new App(saludoImpl).mensaje();
+
+        //Usando archivo de contexto XML
+        contexto();
+    }
+
+    public static void contexto(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring-context.xml");
+        MiBean objBean = (MiBean) context.getBean("miBean");
+        System.out.println(objBean.getValor());
     }
 }
