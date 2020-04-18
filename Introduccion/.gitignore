@@ -14,7 +14,6 @@ target/
 .idea/
 .eclipse
 
-
 target/
 pom.xml.tag
 pom.xml.releaseBackup
