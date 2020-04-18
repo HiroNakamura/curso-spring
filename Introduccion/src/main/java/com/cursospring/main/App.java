@@ -1,9 +1,10 @@
 package com.cursospring.main;
 
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import com.cursospring.main.servicio.Servicio;
+
 
 public class App {
     public static final CharSequence MENSAJE = "Has entrado al curso de Spring Framework";
@@ -27,6 +28,19 @@ public class App {
 
         //Usando @Configuration
         configuracion();
+
+        //Usando @Configuration
+        servicio();
+    }
+
+    public static void servicio(){
+      AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+      context.register(AppConfig.class);
+      context.refresh();
+      Servicio mi_servicio = (Servicio) context.getBean("servicioBean",Servicio.class);
+      System.out.println(mi_servicio.getMensaje());
+      context.close();
+      
     }
 
     public static void configuracion(){
