@@ -2,7 +2,7 @@ package com.cursospring.main;
 
 
 public class App {
-    public static final String MENSAJE = "Bienvenido al mundo Spring !!";
+    public static final CharSequence MENSAJE = ",has entrado al curso de Spring Framework";
 
     private ISaludo saludo;
     
@@ -11,10 +11,11 @@ public class App {
     }
     
     public void mensaje(){
-      
+      saludo.mensaje(MENSAJE);
     }
 
     public static void main( String[] args ){
-        System.out.println(MENSAJE);
+        ISaludo saludoImpl = new SaludoImpl();
+        new App(saludoImpl).mensaje();
     }
 }
