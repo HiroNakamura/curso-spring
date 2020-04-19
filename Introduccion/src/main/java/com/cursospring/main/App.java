@@ -4,7 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import com.cursospring.main.servicio.Servicio;
-
+import com.cursospring.main.servicio.Celsius;
 
 public class App {
     public static final CharSequence MENSAJE = "Has entrado al curso de Spring Framework";
@@ -31,6 +31,15 @@ public class App {
 
         //Usando @Configuration
         servicio();
+
+        //Usando archivo de contexto XML
+        celsius();
+    }
+
+    public static void celsius(){
+      ApplicationContext context = new ClassPathXmlApplicationContext("spring-context.xml");
+      Celsius objBean = (Celsius) context.getBean("celsiusBean");
+      System.out.printf("Valor: %s , Celsis: %f\n",objBean.getValor(), objBean.getCalculo());
     }
 
     public static void servicio(){

@@ -7,4 +7,8 @@
     <property name="valor" value="Europa renacida" />
   </bean>
 
+  <bean id="celsiusBean" class="com.cursospring.main.servicio.Celsius">
+    <property name="valor" value="12.54"/>
+  </bean>
+
 </beans>
