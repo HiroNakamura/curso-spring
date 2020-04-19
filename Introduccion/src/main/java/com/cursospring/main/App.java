@@ -49,7 +49,6 @@ public class App {
       Servicio mi_servicio = (Servicio) context.getBean("servicioBean",Servicio.class);
       System.out.println(mi_servicio.getMensaje());
       context.close();
-      
     }
 
     public static void configuracion(){
