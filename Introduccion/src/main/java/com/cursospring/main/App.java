@@ -6,6 +6,13 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import com.cursospring.main.servicio.Servicio;
 import com.cursospring.main.servicio.Celsius;
 
+import java.util.Date;
+import org.hibernate.Session;
+import com.cursospring.main.modelo.Stock;
+import com.cursospring.main.modelo.StockDetail;
+import com.cursospring.main.util.HibernateUtil;
+
+
 public class App {
     public static final CharSequence MENSAJE = "Has entrado al curso de Spring Framework";
 
@@ -34,6 +41,29 @@ public class App {
 
         //Usando archivo de contexto XML
         celsius();
+    }
+
+    public static void hibernateTest(){
+      System.out.println("Hibernate one to one (XML mapping)");
+      Session session = HibernateUtil.getSessionFactory().openSession();
+      session.beginTransaction();
+      
+      Stock stock = new Stock();
+      stock.setStockCode("4715");
+      stock.setStockName("GENM");
+      
+      StockDetail stockDetail = new StockDetail();
+      stockDetail.setCompName("GENTING Malaysia");
+      stockDetail.setCompDesc("Best resort in the world");
+      stockDetail.setRemark("Nothing Special");
+      stockDetail.setListedDate(new Date());
+      
+      stock.setStockDetail(stockDetail);
+      stockDetail.setStock(stock);
+      
+      session.save(stock);
+      session.getTransaction().commit();
+      System.out.println("Hecho!!");
     }
 
     public static void celsius(){
