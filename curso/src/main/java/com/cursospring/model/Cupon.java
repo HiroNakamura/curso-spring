@@ -3,10 +3,16 @@ package com.cursospring.model;
 import java.math.BigDecimal;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
 
 @Entity(name="Cupon")
 @Table(name="cupon")
 public class Cupon{
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String codigo;
     private BigDecimal descuento;
