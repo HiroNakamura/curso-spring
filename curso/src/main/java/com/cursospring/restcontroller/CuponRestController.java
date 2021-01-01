@@ -25,7 +25,7 @@ public class CuponRestController{
     //http://localhost:8091/cuponapi/cupones
     @RequestMapping(value="/cupones", method = RequestMethod.POST)
     public Cupon crear(@RequestBody Cupon cupon){
-        LOGGER.info("Cupon creado: {}",cupon);
+        LOGGER.info("Se creo el cupon: {}",cupon);
         return this.cuponRepository.save(cupon);
     }
 
@@ -33,7 +33,7 @@ public class CuponRestController{
     @RequestMapping(value="/cupones/{codigo}", method=RequestMethod.GET)
     public Cupon obtenerCupon(@PathVariable("codigo") String codigo){
         //return this.cuponRepository.findById(codigo);
-        LOGGER.info("Cupon con codigo: {}",codigo);
+        LOGGER.info("Se obtiene el cupon con codigo: {}",codigo);
         return this.cuponRepository.findByCodigo(codigo);
     }
 
