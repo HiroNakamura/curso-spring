@@ -1,0 +1,27 @@
+A. Crear nuevo cupón.
+1. Abrir postman.
+2. Crear una nueva solicitud(REQUEST) tipo POST.
+3. Colocar la URL: http://localhost:8091/cuponapi/cupones
+4. Body -> raw -> json/application
+5. Escribir este JSON:
+{
+    "codigo":"MAYOREO",
+    "descuento":0.8,
+    "fecha":"01/01/2010"
+}
+6. Dar clic en botón Send.
+
+
+B. Obtener cupón.
+1. Abrir postman.
+2. Crear una nueva solicitud(REQUEST) tipo GET.
+3. Colocar la URL: http://localhost:8091/cuponapi/cupones/MAYOREO
+4. Dar clic en botón Send.
+
+
+C. Obtener todos los cupones.
+1. Abrir postman.
+2. Crear una nueva solicitud(REQUEST) tipo GET.
+3. Colocar la URL: http://localhost:8091/cuponapi/cupones
+4. Dar clic en botón Send.
+
