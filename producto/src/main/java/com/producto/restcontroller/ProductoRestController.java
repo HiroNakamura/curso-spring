@@ -14,9 +14,9 @@ import java.util.List;
 import com.producto.repository.ProductoRepository;
 import com.producto.model.Producto;
 
-//http://localhost:9090/productoapi
+//http://localhost:9090/
+//@RequestMapping("/prodapi")
 @RestController
-@RequestMapping("productoapi")
 public class ProductoRestController{
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ProductoRestController.class);
@@ -24,15 +24,15 @@ public class ProductoRestController{
     @Autowired
     private ProductoRepository productoRepository;
     
-    //http://localhost:9090/productoapi/productos
-    @PostMapping("productos")
+    //http://localhost:9090/producto
+    @RequestMapping(value="/producto", method = RequestMethod.POST)
     public Producto crear(@RequestBody Producto producto){
         LOGGER.info("Se creo el producto: {}",producto);
         return this.productoRepository.save(producto);
     }
 
-    //http://localhost:9090/productoapi/productos
-    @GetMapping("productos")
+    //http://localhost:9090/productos
+    @RequestMapping(value="/productos", method = RequestMethod.GET)
     public List<Producto> getAllProductos(){
         LOGGER.info("Obtenemos todos los productos");
         return this.productoRepository.findAll();
