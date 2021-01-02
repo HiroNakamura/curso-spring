@@ -5,7 +5,7 @@ target/
 !**/src/test/**/target/
 .mvnw
 
-curso.log
+producto.log
 
 ### STS ###
 .apt_generated

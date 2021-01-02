@@ -1,0 +1,44 @@
+2021-01-01 19:12:45 INFO  ProductorApplication:55 - Starting ProductorApplication using Java 1.8.0_251 on DESKTOP-MJIUS5B with PID 10640 (C:\Users\DELL\Documents\programacion\testGit\curso-spring\productor\target\classes started by DELL in C:\Users\DELL\Documents\programacion\testGit\curso-spring\productor)
+2021-01-01 19:12:45 INFO  ProductorApplication:660 - No active profile set, falling back to default profiles: default
+2021-01-01 19:12:46 INFO  RepositoryConfigurationDelegate:128 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-01 19:12:46 INFO  RepositoryConfigurationDelegate:188 - Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-01-01 19:12:47 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8092 (http)
+2021-01-01 19:12:48 INFO  ServletWebServerApplicationContext:289 - Root WebApplicationContext: initialization completed in 3305 ms
+2021-01-01 19:12:48 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2021-01-01 19:12:49 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2021-01-01 19:12:49 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-01 19:12:49 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-01 19:12:49 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-01 19:12:49 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-01-01 19:12:50 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-01 19:12:50 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-01 19:12:50 WARN  JpaBaseConfiguration$JpaWebConfiguration:221 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-01 19:12:50 INFO  ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-01 19:12:50 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8092 (http) with context path ''
+2021-01-01 19:12:50 INFO  ProductorApplication:61 - Started ProductorApplication in 6.144 seconds (JVM running for 6.976)
+2021-01-01 19:19:29 INFO  ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-01 19:19:29 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-01 19:19:29 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2021-01-01 19:19:29 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2021-01-02 09:15:24 INFO  ProductorApplication:55 - Starting ProductorApplication using Java 1.8.0_251 on DESKTOP-MJIUS5B with PID 76 (C:\Users\DELL\Documents\programacion\testGit\curso-spring\productor\target\classes started by DELL in C:\Users\DELL\Documents\programacion\testGit\curso-spring\productor)
+2021-01-02 09:15:24 INFO  ProductorApplication:660 - No active profile set, falling back to default profiles: default
+2021-01-02 09:15:27 INFO  RepositoryConfigurationDelegate:128 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-02 09:15:27 INFO  RepositoryConfigurationDelegate:188 - Finished Spring Data repository scanning in 23 ms. Found 0 JPA repository interfaces.
+2021-01-02 09:15:30 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8092 (http)
+2021-01-02 09:15:32 INFO  ServletWebServerApplicationContext:289 - Root WebApplicationContext: initialization completed in 7685 ms
+2021-01-02 09:15:33 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2021-01-02 09:15:33 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2021-01-02 09:15:33 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-02 09:15:34 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-02 09:15:34 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-02 09:15:35 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-01-02 09:15:36 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-02 09:15:36 INFO  LocalContainerEntityManagerFactoryBean:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-02 09:15:36 WARN  JpaBaseConfiguration$JpaWebConfiguration:221 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-02 09:15:37 INFO  ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-02 09:15:37 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8092 (http) with context path ''
+2021-01-02 09:15:37 INFO  ProductorApplication:61 - Started ProductorApplication in 15.572 seconds (JVM running for 16.877)
+2021-01-02 09:16:16 INFO  ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-02 09:16:16 INFO  LocalContainerEntityManagerFactoryBean:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-02 09:16:16 INFO  HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2021-01-02 09:16:16 INFO  HikariDataSource:352 - HikariPool-1 - Shutdown completed.

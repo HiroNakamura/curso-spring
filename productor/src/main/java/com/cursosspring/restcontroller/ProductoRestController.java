@@ -37,7 +37,7 @@ public class ProductoRestController{
     }
 
     //http://localhost:8092/productoapi/productos
-    @RequestMapping(value="/productos")
+    @RequestMapping(value="/productos", method=RequestMethod.GET)
     public List<Producto> getAllProductos(){
         LOGGER.info("Obtenemos todos los productos");
         return this.productoRepository.findAll();

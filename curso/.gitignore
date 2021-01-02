@@ -5,7 +5,7 @@ target/
 .mvn/wrapper/maven-wrapper.jar
 .mvnw
 
-curso.log
+cupon.log
 ### STS ###
 .apt_generated
 .classpath

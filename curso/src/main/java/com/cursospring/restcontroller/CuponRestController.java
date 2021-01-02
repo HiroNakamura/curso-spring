@@ -32,13 +32,12 @@ public class CuponRestController{
     //http://localhost:8091/cuponapi/cupones/codigoBuscar
     @RequestMapping(value="/cupones/{codigo}", method=RequestMethod.GET)
     public Cupon obtenerCupon(@PathVariable("codigo") String codigo){
-        //return this.cuponRepository.findById(codigo);
         LOGGER.info("Se obtiene el cupon con codigo: {}",codigo);
         return this.cuponRepository.findByCodigo(codigo);
     }
 
     //http://localhost:8091/cuponapi/cupones
-    @RequestMapping(value="/cupones")
+    @RequestMapping(value="/cupones", method=RequestMethod.GET)
     public List<Cupon> getAllCupones(){
         LOGGER.info("Obtenemos todos los cupones");
         return this.cuponRepository.findAll();
