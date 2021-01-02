@@ -1,7 +1,7 @@
-A. Crear nuevo cupón.
+A. Crear nuevo producto.
 1. Abrir postman.
 2. Crear una nueva solicitud(REQUEST) tipo POST.
-3. Colocar la URL: http://localhost:8092/productoapi/productos
+3. Colocar la URL: http://localhost:9090/productoapi/productos
 4. Body -> raw -> json/application
 5. Escribir este JSON:
 {
@@ -12,16 +12,16 @@ A. Crear nuevo cupón.
 6. Dar clic en botón Send.
 
 
-B. Obtener cupón.
+B. Obtener producto.
 1. Abrir postman.
 2. Crear una nueva solicitud(REQUEST) tipo GET.
-3. Colocar la URL: http://localhost:8092/productoapi/productos/1
+3. Colocar la URL: http://localhost:9090/productoapi/productos/1
 4. Dar clic en botón Send.
 
 
-C. Obtener todos los cupones.
+C. Obtener todos los productos.
 1. Abrir postman.
 2. Crear una nueva solicitud(REQUEST) tipo GET.
-3. Colocar la URL: http://localhost:8092/productoapi/productos
+3. Colocar la URL: http://localhost:9090/productoapi/productos
 4. Dar clic en botón Send.
 
