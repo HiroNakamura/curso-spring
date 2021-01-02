@@ -1,4 +1,4 @@
-package com.cursospringtwo.model;
+package com.producto.model;
 
 import java.math.BigDecimal;
 import javax.persistence.Entity;

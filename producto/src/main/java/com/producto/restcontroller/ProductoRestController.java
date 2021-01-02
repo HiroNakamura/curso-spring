@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.util.List;
-import com.cursospringtwo.repository.ProductoRepository;
-import com.cursospringtwo.model.Producto;
+import com.producto.repository.ProductoRepository;
+import com.producto.model.Producto;
 
 //http://localhost:9090/productoapi
 @RestController
@@ -29,13 +29,6 @@ public class ProductoRestController{
     public Producto crear(@RequestBody Producto producto){
         LOGGER.info("Se creo el producto: {}",producto);
         return this.productoRepository.save(producto);
-    }
-
-    //http://localhost:9090/productoapi/productos/codigoBuscar
-    @GetMapping("productos/{codigo}")
-    public Producto obtenerProducto(@PathVariable("codigo") String codigo){
-        LOGGER.info("Se obtiene el producto con codigo: {}",codigo);
-        return this.productoRepository.findByCodigo(codigo);
     }
 
     //http://localhost:9090/productoapi/productos
