@@ -12,7 +12,7 @@ import java.util.List;
 import com.cursospring.repository.ProductoRepository;
 import com.cursospring.model.Producto;
 
-http://localhost:8092/productoapi
+//http://localhost:8092/productoapi
 @RestController
 @RequestMapping("/productoapi")
 public class ProductoRestController{
