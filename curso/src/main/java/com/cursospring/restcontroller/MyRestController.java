@@ -1,5 +1,7 @@
 package com.cursospring.restcontroller;
 
+
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -16,13 +18,14 @@ import java.util.HashMap;
 //http://localhost:8091/restejemplo
 @RestController
 @RequestMapping("/restejemplo")
+@CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST})
 public class MyRestController{
 
 	//http://localhost:8091/restejemplo/saludo
 	@GetMapping("/saludo")
     @ResponseBody
     public String saludo(){
-       return new String("Hola, mundo!!!");
+       return new String("El servicio REST esta disponible");
     }
 
     //http://localhost:8091/restejemplo/datos
