@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.http.MediaType;
 import com.cursospring.component.MyComponent;
+import java.util.Map;
+import java.util.HashMap;
 
 
 //http://localhost:8091/restejemplo
@@ -21,6 +23,17 @@ public class MyRestController{
     @ResponseBody
     public String saludo(){
        return new String("Hola, mundo!!!");
+    }
+
+    //http://localhost:8091/restejemplo/datos
+    @GetMapping("/datos")
+    @ResponseBody
+    public Map<String,String> getDatos(){
+    	Map<String,String> mapa = new HashMap<String,String>();
+    	mapa.put("1","Alef");
+    	mapa.put("2","Bet");
+    	mapa.put("3","Gimel");
+    	return mapa;
     }
 
 	//http://localhost:8091/restejemplo/sumar
