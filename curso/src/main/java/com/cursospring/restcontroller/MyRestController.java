@@ -24,6 +24,7 @@ public class MyRestController{
 	//http://localhost:8091/restejemplo/saludo
 	@GetMapping("/saludo")
     @ResponseBody
+    @CrossOrigin(origins = "http://localhost:8080")
     public String saludo(){
        return new String("El servicio REST esta disponible");
     }
